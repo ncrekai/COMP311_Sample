@@ -6,3 +6,4 @@ feature/add-new-feature:
 
 - feature/fix-bug:
    - make the greeting options a bit less rude
+   - removing greeting "Attention Bajoran Workers" from optional greetings
