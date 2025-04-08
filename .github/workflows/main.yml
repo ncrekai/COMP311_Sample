@@ -1,0 +1,28 @@
+name: Say Hello Release
+run-name: Creating new release
+on:
+  pull_request_review:
+    types: [edited, dismissed]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "Branch name is ${{ github.ref }} Repository name is ${{ github.repository }}."
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Simulate Build
+      - run: echo "I would have built a jar file"
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+        run: |
+          gh release create "$tag" \
+              --repo="$GITHUB_REPOSITORY" \
+              --title="${tag#v}" \
+              --generate-notes
+      - run: echo "Job's status is ${{ job.status }}."
