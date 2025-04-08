@@ -2,3 +2,5 @@ This is a java application that says hello
 
 feature/add-new-feature:
 - application asks how you would like to be greeted
+- feature/fix-bug:
+   - make the greeting options a bit less rude
