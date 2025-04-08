@@ -1,6 +1,8 @@
 # COMP311_Sample
 ### Practice repository for GitHub workflow assignment
 
-_(Thank you for not making us submit a bunch of screen grabs of us completing each step)_
-
-Hey Ace! - So, keeping track of fake branch updates is harder than I expected. As soon as I started the assignment I immediately starting getting the steps listed in the instructions out of order. And, since GitHub is all about keep track of the changes you make, the only way I could remove those misteps was to restart entirely (or employ complex reseting GitHub operations that would hardly be considered good practice)... So instead I've just decided to embrace the assignment in spirit, adding many commits, pull requests, review/comments and merges, but in no particular order. 
+I wish I could be handing this in more complete
+- I lost track of the order I should be completing the changes to the repository almost immediately. WIth GitHub tracking every change I couldn't go back and make corrections without further adding to the misteps outside of scrapping everything and starting over (or using more advanced GitHub reseting operations, which seemed inadvisable) - so I opted to keep continue adding  commits, pull requests, review/comments and merges, and hope that even out of order I have demonstrated understandind
+- I made my simple application using java, but forgot I'd need to make it using a build tool like Maven/Gradle to create the release in GitHub. I just didn't have time to start over.
+- One reason I don't have time is I spent a lot of it trying to grasp using the local git hooks - I was able to implement a simple Pre-Commit hook - but could not find sufficient documentation to explain using the pre-commit-msg / commit-msg hook I would need to enforce commit message conventions 
+- 
